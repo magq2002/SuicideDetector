@@ -1,28 +1,78 @@
-
 ---
-import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro';
-import Navbar from '../components/Navbar.astro';
+import Navbar from "../components/Navbar.astro";
 ---
 
+<Navbar />
 
-
-<Navbar></Navbar>
-
-<section class="relative bg-blue-300">
- <div class="container mx-auto px-4 lg:pt-24">
+<section class="relative bg-blue-300 pb-12">
+  <div class="container mx-auto px-4">
     <div class="flex flex-wrap text-center justify-center">
-        <div class="w-full lg:w-6/12 px-4">
-            <h2 class="text-6xl font-semibold text-white">
-                Analice ideas suicidas en l&iacute;nea
-            </h2>
-
-            <button type="button" class="text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-full text-3xl px-16 py-10 text-center me-2 my-14">
-                Suelta o sube tus archivos
-            </button>
-
-        </div>
-
+      <div
+        class="w-full lg:w-6/12 px-4 flex flex-col justify-center items-center"
+      >
+        <h2 class="text-6xl font-semibold text-white my-8">
+          Analice ideas suicidas en l&iacute;nea
+        </h2>
+        <label
+          for="UploadFile"
+          class="text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-full text-3xl py-10 text-center my-14 cursor-pointer block w-4/5"
+        >
+          <div class="flex items-center justify-center px-10">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-16 h-16 mx-2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3.75 9.776c.112-.017.227-.026.344-.026h15.812c.117 0 .232.009.344.026m-16.5 0a2.25 2.25 0 0 0-1.883 2.542l.857 6a2.25 2.25 0 0 0 2.227 1.932H19.05a2.25 2.25 0 0 0 2.227-1.932l.857-6a2.25 2.25 0 0 0-1.883-2.542m-16.5 0V6A2.25 2.25 0 0 1 6 3.75h3.879a1.5 1.5 0 0 1 1.06.44l2.122 2.12a1.5 1.5 0 0 0 1.06.44H18A2.25 2.25 0 0 1 20.25 9v.776"
+              ></path>
+            </svg>
+            Suelta o sube tus archivos
+          </div>
+        </label>
+        <input type="file" id="UploadFile" class="hidden" />
+      </div>
     </div>
-
- </div>
+  </div>
+</section>
+<section class="relative bg-red-300">
+  <div class="container m-auto py-20">
+    <div class="mx-12">
+        <header class="mb-12 text-center">
+            <h2 class="text-4xl my-6">Analizar formatos de archivo de correo electrónico, incluidos MSG y EML</h2>
+            <p class="text-lg">Nuestro analizador de archivos de correo electrónico permite analizar archivos en línea de forma gratuita. Analice EML, MSG o cualquier otro formato de archivo compatible. No se requiere la instalación de software de terceros. La aplicación basada en la web es rápida, sólida y fácil de usar. uso y absolutamente gratis.</p>
+        </header>
+        <div class="flex flex-wrap mt-12">
+          <div class="w-full md:w-1/3 p-4">
+            <div class="text-center">
+                <h3 class="text-xl font-bold my-2">
+                    Analizar archivos multiformato
+                </h3>
+                <p>Analice convenientemente sus documentos multiformato, incluidos DOC, PDF, DOCX, HTML y muchos más.</p>
+            </div>
+          </div>
+          <div class="w-full md:w-1/3 p-4">
+            <div class="text-center">
+                <h3 class="text-xl font-bold my-2">
+                    Analizar archivos multiformato
+                </h3>
+                <p>Analice convenientemente sus documentos multiformato, incluidos DOC, PDF, DOCX, HTML y muchos más.</p>
+            </div>
+          </div>
+          <div class="w-full md:w-1/3 p-4">
+            <div class="text-center">
+                <h3 class="text-xl font-bold my-2">
+                    Analizar archivos multiformato
+                </h3>
+                <p>Analice convenientemente sus documentos multiformato, incluidos DOC, PDF, DOCX, HTML y muchos más.</p>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
 </section>
